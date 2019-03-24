@@ -1,16 +1,15 @@
-# Prettify JSON
+# Читабельный JSON
 
-Cкрипт, который на вход принимает путь до файла с произвольными данными в формате JSON и выводит его содержимое в консоль в удобном для чтения виде:
+Cкрипт выводит содержимое `json` в удобном для чтения виде.
 
-# Quickstart
+# Быстрый старт
 
-[TODO]
-
-Example of script launch on Linux, Python 3.5:
+Для запуска указывается путь до файла данных в формате `json`
+Пример запуска скрипта на Linux, Python 3.5:
 
 ```bash
 
-$ python pprint_json.py <path to file>
+$ python pprint_json.py <путь до файла>
 # TODO add output example
 [
     {
@@ -188,6 +187,6 @@ $ python pprint_json.py <path to file>
 
 ```
 
-# Project Goals
+# Цели проекта
 
-The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
+Код создан в учебных целях. В рамках учебного курса по веб-разработке ― [DEVMAN.org](https://devman.org)
