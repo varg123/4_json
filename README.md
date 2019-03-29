@@ -9,7 +9,7 @@ Cкрипт выводит содержимое `json` в удобном для 
 
 ```bash
 
-$ python pprint_json.py <путь до файла>
+$ python pprint_json.py -f <путь до файла>
 # TODO add output example
 {
     "Id": "79742784-9ef3-4543-bc98-a219a8903c18",
