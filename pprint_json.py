@@ -11,6 +11,7 @@ def load_data(filepath):
 def print_pretty_json(json_string):
     print(json.dumps(json_string, indent=4, ensure_ascii=False))
 
+
 def parse_filepath():
     parser = argparse.ArgumentParser()
     parser.add_argument('-f', '--filepath', required=True)
@@ -22,6 +23,6 @@ if __name__ == '__main__':
     try:
         print_pretty_json(load_data(filepath))
     except FileNotFoundError:
-        exit("bars.py: error: the data file was not found.")  
+        exit("bars.py: error: the data file was not found.")
     except json.decoder.JSONDecodeError:
-        exit("bars.py: error: the data file is incorrect.")  
+        exit("bars.py: error: the data file is incorrect.")
