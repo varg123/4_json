@@ -23,6 +23,6 @@ if __name__ == '__main__':
     try:
         print_decoded_json(load_data(filepath))
     except FileNotFoundError:
-        exit("bars.py: error: the data file was not found.")
+        exit('bars.py: error: the data file was not found.')
     except json.decoder.JSONDecodeError:
-        exit("bars.py: error: the data file is incorrect.")
+        exit('bars.py: error: the data file is incorrect.')
