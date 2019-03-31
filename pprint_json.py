@@ -8,8 +8,8 @@ def load_data(filepath):
         return json.loads(file_with_data.read())
 
 
-def print_decoded_json(json_string):
-    print(json.dumps(json_string, indent=4, ensure_ascii=False))
+def print_pretty_json(data_object):
+    print(json.dumps(data_object, indent=4, ensure_ascii=False))
 
 
 def parse_filepath():
@@ -21,7 +21,7 @@ def parse_filepath():
 if __name__ == '__main__':
     filepath = parse_filepath()
     try:
-        print_decoded_json(load_data(filepath))
+        print_pretty_json(load_data(filepath))
     except FileNotFoundError:
         exit('bars.py: error: the data file was not found.')
     except json.decoder.JSONDecodeError:
